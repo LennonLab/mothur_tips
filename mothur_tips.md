@@ -23,6 +23,12 @@ Then, as an example, you can move your files - in this case your Shell command f
 The secure copy command will ask you to supply your IU passcode for each file that you transfer. 
 
 ###3) Running mothur
+First thing you'll need to do is run the DatabaseDownload.sh shell script. This contains Silva and RDP databases that you'll need for mothur analyses. You can run the script with the following:
+
+`> $ sh DatabaseDownload.sh`
+
+This will take about 10 mins and will extract files into your working directory (not DatabaseDownload.sh)
+
 Once all of your files are in the proper working directory (e.g., N/dc2/projects/Lennon_Sequences/2015_eDNA), you are ready to submit your job. This can be done using TORQUE (https://kb.iu.edu/d/bezu). For example, to submit a job, use the following code:
 
 `> $ qsub eDNA.Bacteria.sh`
